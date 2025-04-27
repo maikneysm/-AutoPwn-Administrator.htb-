@@ -215,7 +215,7 @@ Mode                 LastWriteTime         Length Name
 - `Emily` has **GenericWrite** over `Ethan`.
 - The user EMILY@ADMINISTRATOR.HTB has generic write access to the user ETHAN@ADMINISTRATOR.HTB.
 - Generic Write access grants you the ability to write to any non-protected attribute on the target object, including "members" for a group, and "serviceprincipalnames" for a user
- ![[Pasted image 20250427101749.png|700]]
+<img src="Pasted image 20250427101749.png" alt="BloodHound path" width="700"/>
 ## Exploit GenericWrite Using `targetedKerberoast.py`
 - The tool will automatically attempt a targetedKerberoast attack, either on all users or against a specific one if specified in the command line, and then obtain a crackable hash.
 - The recovered hash can be cracked offline
@@ -250,7 +250,7 @@ While analyzing BloodHound data, we observed that the user `ethan@administrator.
 - `GetChanges`
 - `GetChangesAll`
 - `GetChangesInFilteredSet`
-![[Pasted image 20250427102807.png|800]]
+<img src="Pasted image 20250427102807.png" alt="BloodHound path" width="700"/>
 These three rights together allow `ethan` to perform a **DCSync attack** — effectively requesting replication of password hashes from the Domain Controller.
 Using `secretsdump.py`, we were able to extract the NTLM hash for the `Administrator` account and gain full domain compromise.
 ```bash
