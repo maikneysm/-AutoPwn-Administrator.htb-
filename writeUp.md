@@ -132,7 +132,7 @@ Using BloodHound we discover:
 ## BloodHound Enumeration
 - `Michael` has **ForceChangePassword** rights over `Benjamin`.
 - The user MICHAEL@ADMINISTRATOR.HTB has the capability to change the user BENJAMIN@ADMINISTRATOR.HTB's password without knowing that user's current password.
-![[Pasted image 20250427100753.png|700]]
+<img src="Pasted image 20250427100753.png" alt="BloodHound path" width="700"/>
 ### Change Benjamin's Password using RPC
 From Michael using RPC:
 ```bash
