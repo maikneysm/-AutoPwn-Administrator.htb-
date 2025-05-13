@@ -215,7 +215,9 @@ Mode                 LastWriteTime         Length Name
 - `Emily` has **GenericWrite** over `Ethan`.
 - The user EMILY@ADMINISTRATOR.HTB has generic write access to the user ETHAN@ADMINISTRATOR.HTB.
 - Generic Write access grants you the ability to write to any non-protected attribute on the target object, including "members" for a group, and "serviceprincipalnames" for a user
+
 <img src="Pasted image 20250427101749.png" alt="BloodHound path" width="700"/>
+
 ## Exploit GenericWrite Using `targetedKerberoast.py`
 - The tool will automatically attempt a targetedKerberoast attack, either on all users or against a specific one if specified in the command line, and then obtain a crackable hash.
 - The recovered hash can be cracked offline
